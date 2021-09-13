@@ -1,13 +1,20 @@
-import React from 'react'
-import ProductCard from '../ProductCard'
-import { StyledGrid } from './styles.css';
+import React from "react";
+import ProductCard from "../ProductCard";
+import { StyledGrid } from "./styles.css";
 
-const ProductsGrid = ({ products }) => {
+const ProductsGrid = ({ products, points, redeemProduct }) => {
   return (
     <StyledGrid>
-      {products.map(product => <ProductCard {...product} />)}
+      {products.map((product) => (
+        <ProductCard
+          key={product._id}
+          {...product}
+          points={points}
+          redeemProduct={redeemProduct}
+        />
+      ))}
     </StyledGrid>
-  )
-}
+  );
+};
 
-export default ProductsGrid
+export default ProductsGrid;
