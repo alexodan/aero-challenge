@@ -28,8 +28,8 @@ function App() {
   };
 
   const handleAddPoints = () => {
-    addPoints().then(({ response }) => {
-      setUserInfo((prev) => ({ ...prev, points: response["New Points"] }));
+    addPoints().then(({ data }) => {
+      setUserInfo((prev) => ({ ...prev, points: data["New Points"] }));
     });
   };
 

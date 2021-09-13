@@ -43,7 +43,7 @@ export const addPoints = () => {
   return axios.post(
     "https://coding-challenge-api.aerolab.co/user/points",
     {
-      amount: 2000,
+      amount: 1000,
     },
     options
   );
