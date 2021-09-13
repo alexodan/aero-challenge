@@ -29,6 +29,7 @@ export const StyledHeader = styled.div`
     display: flex;
 
     h2 {
+      font-size: 28px;
       margin-right: 10px;
     }
 
@@ -41,7 +42,7 @@ export const StyledHeader = styled.div`
       display: flex;
       font-weight: 700;
       justify-content: space-around;
-      padding: 5px;
+      padding: 2px 5px 0 5px;
       width: 85px;
     }
   }
