@@ -39,11 +39,11 @@ export const redeemProduct = (id) => {
   );
 };
 
-export const addPoints = () => {
+export const addPoints = (points) => {
   return axios.post(
     "https://coding-challenge-api.aerolab.co/user/points",
     {
-      amount: 1000,
+      amount: points,
     },
     options
   );

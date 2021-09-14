@@ -28,7 +28,7 @@ function App() {
   };
 
   const handleAddPoints = () => {
-    addPoints().then(({ data }) => {
+    addPoints(1000).then(({ data }) => {
       setUserInfo((prev) => ({ ...prev, points: data["New Points"] }));
     });
   };
