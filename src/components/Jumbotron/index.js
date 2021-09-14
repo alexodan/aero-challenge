@@ -1,12 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import { MediaQueries } from "../../constants";
 
 const StyledContainer = styled.div`
   background-image: ${(props) => `url(${props.background})`};
   background-size: cover;
-  height: 400px;
+  height: 120px;
   width: 100%;
   display: flex;
+  ${MediaQueries.FromMobile} {
+    height: 200px;
+  }
+  ${MediaQueries.FromTablet} {
+    height: 400px;
+  }
 
   h1 {
     color: white;

@@ -1,9 +1,5 @@
 import styled from "styled-components";
-
-export const Colors = {
-  Primary: "#16DBFF",
-  Secondary: "rgb(200, 200, 200)",
-};
+import { Colors, MediaQueries } from "./constants";
 
 export const StyledApp = styled.div`
   width: 100%;
@@ -31,6 +27,11 @@ export const StyledHeader = styled.div`
     h2 {
       font-size: 28px;
       margin-right: 10px;
+      display: none;
+
+      ${MediaQueries.FromMobile} {
+        display: block;
+      }
     }
 
     button {

@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import { Colors } from "../../styles.css";
+import { Colors } from "../../constants";
 
 export const StyledContainer = styled.div`
   display: flex;
   align-items: center;
   margin-top: 30px;
+  padding-left: 20px;
 
   span {
     font-weight: 700;
@@ -20,5 +21,5 @@ export const Option = styled.button`
   color: white;
   cursor: pointer;
   padding: 5px;
-  font-size: 18px;
+  font-size: 16px;
 `;

@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { Colors } from "../../styles.css";
+import { Colors } from "../../constants";
 
 export const StyledCard = styled.div`
+  cursor: pointer;
   background-color: white;
   border-radius: 10px;
   padding: 5%;
