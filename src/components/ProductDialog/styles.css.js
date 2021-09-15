@@ -48,15 +48,18 @@ export const StyledContainer = styled.div`
   }
 
   .card-image-container {
-    top: 0;
+    background-color: white;
     left: 0;
     overflow: hidden;
+    top: 0;
     width: 100%;
     ${MediaQueries.FromTablet} {
-      height: 505px;
+      height: 400px;
     }
     img {
-      width: 100%;
+      display: block;
+      height: 100%;
+      margin: 0 auto;
     }
   }
 
